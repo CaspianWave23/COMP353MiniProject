@@ -1,0 +1,222 @@
+-- Populating Employee
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (1, "123456789", "Mitchel", "Scott-Bond", "2000-01-01", "5145145145", "Quebec", "123 Rue Guy", "Montreal", "A1A 1A1", "email@email.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (2, "111111111", "Mohamed", "Allalou", "1999-02-02", "4384384384", "Quebec", "456 St Catherine", "Montreal", "B2B 2B2", "gmail@gmail.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (3, "222222222", "Abdul", "Raja", "1998-03-03", "4504504504", "Quebec", "789 Rene Levesque", "Montreal", "C3C 3C3", "Concordia@concordia.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (4, "444444444", "Arvand", "Azarbar", "1997-04-04", "5144381111", "Quebec", "1 Crescent", "Montreal", "D4D 4D4", "yahoo@yahoo.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (5, "555555555", "Mickey", "Roorke", "1950-05-05", "1234567890", "Quebec", "1 Rue De La Montagne", "Montreal", "G5G 5G5", "micro@micro.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (6, "616161616", "John", "Snow", "2000-02-02", "3431234567", "Quebec", "3 John Street", "Montreal", "F6F 6F6", "John@gmail.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (7, "777777777", "George", "Jungle", "1999-06-03", "0987654321", "Quebec", "8 George street", "Montreal", "Z6Z 9Z9", "George@gmail.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (8, "888888888", "Ron", "McDonald", "1990-12-12", "7778889990", "Quebec", "7 RonDon Street", "Montreal", "R9R 9R9", "Ronald@concordia.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (9, "999999999", "Moe", "Smith", "2002-07-12", "1237654566", "Quebec", "9 Moe Smith Street", "Montreal", "S5S 5S5", "moeSmith@yahoo.ca", "Yes");
+
+INSERT INTO Employee(employeeID, medicare, firstname, lastname, birthdate, phone, province, address, city, postal, email, citzenship)
+values (10, "101010101", "Danny", "Devito", "1985-05-05", "0981234567", "Quebec", "12 Don Street", "Montreal", "D9D 9D9", "Danny@microsoft.com", "Yes");
+
+
+
+
+-- Populating Vaccine
+INSERT INTO Vaccine(vaccineID, vaccineName)
+values (1, "Pfizer");
+
+INSERT INTO Vaccine(vaccineID, vaccineName)
+values (2, "Moderna");
+
+INSERT INTO Vaccine(vaccineID, vaccineName)
+values (3, "AstraZeneca");
+
+INSERT INTO Vaccine(vaccineID, vaccineName)
+values (4, "Johnson & Johnson");
+
+
+
+-- Populating Occupation
+INSERT INTO Occupation(occupationID, occupationName)
+values (1, "Nurse");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (2, "Doctor");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (3, "Cashier");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (4, "Pharmacist");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (5, "Receptionist");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (6, "Security");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (7, "General Worker");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (8, "Nurse");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (9, "Administrator");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (10, "Driver");
+
+
+
+-- Populating EmployeeRole
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (1, 1);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (1, 2);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (2, 3);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (6, 4);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (9, 5);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (9, 6);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (9, 1);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (4, 7);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (5, 8);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (7, 9);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (8, 10);
+
+
+
+
+
+
+-- Populating Facility
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(1,"Santé McGill","www.McGill.ca","Special", "5145145555","845 Sherbrooke St W","H3A 0G4","Quebec","Montreal",100);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(2,"CLSC Vaudreuil","www.clscVaudreuil.ca","CLSC", "4504504444","12 Blvd Cite Des Jeune","J7T 5G5","Quebec","Montreal",200);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(3,"Veterans Hospital","https://veteranshospital.ca","Hospital", "4504501111","305 Boul des Anciens-Combattants","H9X 1Y9","Quebec","Montreal",150);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(4,"Clinic Dorion","www.clinicDorion.ca","Clinic", "4504501111","600 Bd Harwood","J7V 6A3","Quebec","Montreal",250);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(5,"Clinic Ile Perrot","www.clinicIlePerrot.ca","Clinic", "4504503333","20 Rue Don Quichotte","A9A 1B3","Quebec","Montreal",250);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(6,"Pharmaprix Ste Catherine","www.pharmaprix.ca","Pharmacy", "5145147777","2 Rue Ste Catherine","L0L 0L0","Quebec","Montreal",25);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(7,"Sante Concordia","www.concordia.ca","Special", "5145141234","3 Rue Guy","G1R 1G3","Quebec","Montreal",150);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(8,"Jean Coutu Pincourt","www.jeancoutu.ca","Pharmacy", "4504504567","Blvd Cardinal Leger","J8J 2J2","Quebec","Montreal",15);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(9,"Royal Victoria Hospital","www.royalvictoriahospital.ca","Hospital", "5144380987","1001 Decarie Blvd","H4A 3J1","Quebec","Montreal",75);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(10,"CLSC Metro","www.clscmetro.ca","CLSC", "5149340354","1801 Boul. de Maisonneuve Ouest","H3H 1J9","Quebec","Montreal",115);
+
+INSERT INTO Facility (facilityID,facilityName,facilityWebAddress,facilityType,facilityPhone,facilityAddress,facilityPostalCode,facilityProvince,FacilityCity,capacity)
+values(11,"Hospital Maisonneuve Rosemont","https://ciusss-estmtl.gouv.qc.ca/etablissement/hopital-maisonneuve-rosemont","Hospital", "5142523400","5415 Assomption Blvd","H1T 2M4","Quebec","Montreal",215);
+
+
+
+-- Populating Works At table
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (11,2, "2021-01-01");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (11,1, "2015-05-11");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate, enddate)
+values (1,9, "2010-03-10","2012-01-01");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (8,4, "2020-02-02");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (1,9, "2015-05-11");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (3,2, "2017-07-07");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (2,5, "2016-01-11");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (3,2, "2021-08-08");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (7,1, "2022-09-09");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (6,3, "2023-02-02");
+
+INSERT INTO WorksAt (facilityID, employeeID, startdate)
+values (9,7, "2019-06-06");
+
+
+-- Populating Infected Table
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(1,"2020-06-06","SARS-COV-2",1);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(1,"2020-08-08","SARS-COV-2",2);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(1,"2020-07-07","SARS-COV-2",3);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(1,"2020-09-09","SOVID-19",4);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(1,"2020-05-29","COVID-19",5);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(2,"2021-01-01","COVID-19",1);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(2,"2022-01-01","SARS-COV-2",5);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(2,"2021-02-02","COVID-19",2);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(1,"2020-06-12","COVID-19",6);
+
+INSERT INTO Infected(numberInfected, infectionDate,infectionType,employeeID)
+values(1,"2020-06-10","COVID-19",7);
