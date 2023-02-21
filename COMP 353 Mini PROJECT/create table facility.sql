@@ -1,14 +1,14 @@
 USE ubc353_4;
 Create TABLE Facility (
-facilityID int NOT NULL auto_increment,
-facilityName VARCHAR(75) NULL,
-facilityWebAddress VARCHAR(200) NULL,
-facilityType VARCHAR(30) NULL,
-facilityPhone VARCHAR(15) NULL,
-facilityAddress VARCHAR(50) NULL,
+facilityID int auto_increment,
+facilityName VARCHAR(75),
+facilityWebAddress VARCHAR(200),
+facilityType VARCHAR(30),
+facilityPhone VARCHAR(15),
+facilityAddress VARCHAR(50),
 facilityPostalCode VARCHAR(10),
 facilityProvince VARCHAR(50),
-facilityCity VARCHAR(50) NULL,
+facilityCity VARCHAR(50),
 capacity int,
 PRIMARY KEY(facilityID)
 );
