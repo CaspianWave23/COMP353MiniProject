@@ -1,0 +1,68 @@
+
+
+-- Populating Occupation
+INSERT INTO Occupation(occupationID, occupationName)
+values (1, "Nurse");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (2, "Doctor");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (3, "Cashier");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (4, "Pharmacist");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (5, "Receptionist");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (6, "Security");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (7, "General Worker");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (8, "Nurse");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (9, "Administrator");
+
+INSERT INTO Occupation(occupationID, occupationName)
+values (10, "Driver");
+
+
+
+-- Populating EmployeeRole
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (1, 1);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (1, 2);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (2, 3);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (6, 4);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (9, 5);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (9, 6);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (9, 1);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (4, 7);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (5, 8);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (7, 9);
+
+INSERT INTO EmployeeRole(occupationID, EmployeeID)
+values (8, 10);
