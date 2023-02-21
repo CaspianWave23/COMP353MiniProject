@@ -1,6 +1,6 @@
 
 USE ubc353_4;
-CREATE TABLE WorksAt (
+CREATE TABLE Manages (
 employeeID INT,
 facilityID INT,
 PRIMARY KEY (facilityID),
